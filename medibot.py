@@ -8,10 +8,7 @@ from langchain_community.vectorstores import FAISS
 from langchain_core.prompts import PromptTemplate
 from langchain_huggingface import HuggingFaceEndpoint
 
-from transformers import pipeline
 
-# Force the model to run on CPU
-llm = pipeline("text-generation", model="mistralai/Mistral-7B-Instruct-v0.1", device=-1)
 
 
 ## Uncomment the following files if you're not using pipenv as your virtual environment manager
